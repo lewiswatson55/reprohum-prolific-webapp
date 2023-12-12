@@ -132,7 +132,7 @@ def study():
     html_content = preprocess_html(html_content, df.iloc[[task_number]], task_id) # Params: html_content, df, task_id=-1
     html_content += f'<input type="hidden" id="prolific_pid" name="prolific_pid" value="{prolific_pid}">\n'
     html_content += f'<input type="hidden" id="session_id" name="session_id" value="{session_id}">\n'
-    html_content += f'<input type="hidden" id="study_id" name="study_id" value="{session_id}">\n'
+    html_content += f'<input type="hidden" id="study_id" name="study_id" value="{study_id}">\n'
     html_content += f'<input type="hidden" id="task_id" name="task_id" value="{task_id}">\n'
     return render_template_string(html_content)
 
